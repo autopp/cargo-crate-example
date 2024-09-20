@@ -25,7 +25,7 @@ jobs:
         run: |
           VERSION=$(cargo metadata --format-version=1 --no-deps | jq -r '.packages[0].version')
           TAG="v${VERSION}"
-          if [[ $(gh api /repos/${GITHUB_REPOSITORY}/texest/releases | jq "any(.name == \"${TAG}\" and .draft == true)") = true ]]; then
+          if [[ $(gh api /repos/${GITHUB_REPOSITORY}/releases | jq "any(.name == \"${TAG}\" and .draft == true)") = true ]]; then
             echo Delete existing release
             gh release delete "${TAG}"
           fi
