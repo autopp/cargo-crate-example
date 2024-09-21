@@ -1,0 +1,1 @@
+/Users/autopp/ghq/github.com/autopp/cargo-crate-example/target/debug/libautopp_inc.rlib: /Users/autopp/ghq/github.com/autopp/cargo-crate-example/autopp_inc/src/add.rs /Users/autopp/ghq/github.com/autopp/cargo-crate-example/autopp_inc/src/lib.rs

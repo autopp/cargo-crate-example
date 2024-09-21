@@ -1,8 +1,2 @@
-[package]
-name = "autopp_inc"
-version = "0.2.0"
-edition = "2021"
-license = "Apache-2.0"
-description = "example package"
-
-[dependencies]
+[workspace]
+members = ["autopp_inc"]
