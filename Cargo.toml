@@ -1,2 +1,4 @@
 [workspace]
-members = ["autopp_inc"]
+members = ["autopp_inc", "autopp_inc_cli"]
+resolver = "2"
+package.version = "0.2.0"
