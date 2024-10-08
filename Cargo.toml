@@ -1,4 +1,8 @@
-[workspace]
-members = ["autopp_inc", "autopp_inc_cli"]
-resolver = "2"
-package.version = "0.2.0"
+[package]
+name = "autopp_inc"
+version = "0.2.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "example package"
+
+[dependencies]
