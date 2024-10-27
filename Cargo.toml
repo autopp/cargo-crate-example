@@ -7,11 +7,12 @@ description = "example package"
 
 [features]
 default = []
-cli = []
-
-[dependencies]
+cli = ["clap"]
 
 [[bin]]
 name = "autopp-inc"
 path = "src/main.rs"
 required-features = ["cli"]
+
+[dependencies]
+clap = { version = "4.5.20", features = ["derive"], optional = true}
