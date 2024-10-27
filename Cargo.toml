@@ -5,4 +5,13 @@ edition = "2021"
 license = "Apache-2.0"
 description = "example package"
 
+[features]
+default = []
+cli = []
+
 [dependencies]
+
+[[bin]]
+name = "autopp-inc"
+path = "src/main.rs"
+required-features = ["cli"]
